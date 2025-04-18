@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bean Board Coffeehouse - Experience specialty coffee in a modern atmosphere.">
+    <title>Bean Board Coffeehouse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero" class="logo-container">
+                    <div class="logo-text logo-text-bean">Bean</div>
+                    <i class="fas fa-mug-hot logo-coffee-icon"></i>
+                    <div class="logo-text logo-text-board">Board</div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Modern <span class="highlight">Coffee</span> Experience</h1>
+                <p>Welcome to Bean Board, where artisanal coffee meets contemporary design.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary-btn">Explore Menu</a>
+                    <a href="#contact" class="btn secondary-btn">Find Us</a>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Open 8:30 AM - 11:00 PM</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>07382638620</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="beanboard-image.jpg" alt="Bean Board Coffeehouse" class="main-image">
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-text">
+                    <h2>The Bean Board <span class="highlight">Experience</span></h2>
+                    <p>We source ethically grown beans from around the world and roast them to perfection. Each cup tells a story of origin, craft, and care.</p>
+                </div>
+                <div class="intro-features">
+                    <div class="feature">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Ethically Sourced</h3>
+                        <p>Direct relationships with farmers ensuring quality and fairness.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-fire"></i>
+                        <h3>Freshly Roasted</h3>
+                        <p>Small-batch roasting to bring out unique flavor profiles.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h3>Crafted with Love</h3>
+                        <p>Baristas trained to perfect every cup with precision and care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2>Our <span class="highlight">Menu</span></h2>
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-tab="coffee">Coffee</button>
+                    <button class="tab-btn" data-tab="food">Food</button>
+                    <button class="tab-btn" data-tab="desserts">Desserts</button>
+                </div>
+                
+                <div class="menu-content">
+                    <!-- Coffee Menu -->
+                    <div class="tab-content active" id="coffee-menu">
+                        <div class="menu-category">
+                            <h3>Espresso Based</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Espresso</h4>
+                                        <p>Our signature blend, rich and balanced</p>
+                                    </div>
+                                    <div class="price">$3.50</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Cappuccino</h4>
+                                        <p>Equal parts espresso, steamed milk, and silky foam</p>
+                                    </div>
+                                    <div class="price">$4.75</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Latte</h4>
+                                        <p>Smooth espresso with steamed milk and a touch of foam</p>
+                                    </div>
+                                    <div class="price">$5.25</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Flat White</h4>
+                                        <p>Ristretto shots with velvety steamed milk</p>
+                                    </div>
+                                    <div class="price">$5.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category">
+                            <h3>Pour Over</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Single Origin</h4>
+                                        <p>Rotating selection of seasonal beans</p>
+                                    </div>
+                                    <div class="price">$5.50</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>House Blend</h4>
+                                        <p>Our signature blend for pour over</p>
+                                    </div>
+                                    <div class="price">$4.75</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category">
+                            <h3>Cold Drinks</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Cold Brew</h4>
+                                        <p>Slow-steeped for 18 hours, smooth and refreshing</p>
+                                    </div>
+                                    <div class="price">$4.95</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Iced Latte</h4>
+                                        <p>Espresso over ice with cold milk</p>
+                                    </div>
+                                    <div class="price">$5.25</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Food Menu -->
+                    <div class="tab-content" id="food-menu">
+                        <div class="menu-category">
+                            <h3>Breakfast</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Avocado Toast</h4>
+                                        <p>Sourdough, smashed avocado, poached egg, chili flakes</p>
+                                    </div>
+                                    <div class="price">$9.50</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Granola Bowl</h4>
+                                        <p>House-made granola, Greek yogurt, seasonal fruits</p>
+                                    </div>
+                                    <div class="price">$8.25</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category">
+                            <h3>Lunch</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Caprese Sandwich</h4>
+                                        <p>Tomato, mozzarella, basil, balsamic glaze</p>
+                                    </div>
+                                    <div class="price">$10.50</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Quinoa Salad</h4>
+                                        <p>Mixed greens, quinoa, roasted vegetables, tahini dressing</p>
+                                    </div>
+                                    <div class="price">$11.25</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Desserts Menu -->
+                    <div class="tab-content" id="desserts-menu">
+                        <div class="menu-category">
+                            <h3>Sweet Treats</h3>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Tiramisu</h4>
+                                        <p>Coffee-soaked ladyfingers, mascarpone cream</p>
+                                    </div>
+                                    <div class="price">$6.50</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Chocolate Brownie</h4>
+                                        <p>Rich dark chocolate, walnuts, served warm</p>
+                                    </div>
+                                    <div class="price">$5.25</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="item-details">
+                                        <h4>Lemon Tart</h4>
+                                        <p>Buttery crust, tangy lemon filling, meringue</p>
+                                    </div>
+                                    <div class="price">$5.75</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our <span class="highlight">Story</span></h2>
+                        <p>Bean Board was born from a passion for great coffee and meaningful connections. Founded in 2012, we began as a small cart at the local farmers market, serving freshly roasted coffee to our community.</p>
+                        <p>As our reputation for quality and service grew, we opened our first brick-and-mortar location in 2015. Today, Bean Board stands as a testament to our commitment to craft, community, and coffee culture.</p>
+                        <p>Our name "Bean Board" represents our approach to coffee: carefully selecting each bean, understanding its journey from seed to cup, and presenting a diverse board of flavor profiles for our customers to experience.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="coffee-process">
+                            <div class="process-step">
+                                <i class="fas fa-leaf"></i>
+                                <h4>Source</h4>
+                            </div>
+                            <div class="process-step">
+                                <i class="fas fa-fire"></i>
+                                <h4>Roast</h4>
+                            </div>
+                            <div class="process-step">
+                                <i class="fas fa-mug-hot"></i>
+                                <h4>Brew</h4>
+                            </div>
+                            <div class="process-step">
+                                <i class="fas fa-smile"></i>
+                                <h4>Enjoy</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Our <span class="highlight">Space</span></h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item item1">
+                        <img src="beanboard-cake.jpg" alt="Coffee and cake" class="real-gallery-img">
+                        <div class="overlay">
+                            <span>Coffee & Cake</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item item2">
+                        <img src="beanboard-coldcoffee.jpg" alt="Cold brew coffee" class="real-gallery-img">
+                        <div class="overlay">
+                            <span>Cold Brews</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item item3">
+                        <img src="beanboard-almonds.jpg" alt="Coffee with almonds" class="real-gallery-img">
+                        <div class="overlay">
+                            <span>Our Signature</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item item4">
+                        <img src="beanboard-cups.webp" alt="Stacked coffee cups" class="real-gallery-img">
+                        <div class="overlay">
+                            <span>Curated Collection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Visit <span class="highlight">Us</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>P8R3+JWR, 49-54-3/16, BS Layout Rd, North Extension,</p>
+                                <p>Balayya Sastri Layout, Seethamadhara,</p>
+                                <p>Visakhapatnam, Andhra Pradesh 530013</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Open Daily: 8:30 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>07382638620</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@beanboard.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <div class="map-content">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.2880935010846!2d83.3092!3d17.7389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433ebd1961d1%3A0x772e766c0398e833!2sSeethammadhara%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1681800000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay <span class="highlight">Connected</span></h2>
+                    <p>Subscribe to our newsletter for updates on events, new menu items, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-container footer">
+                        <div class="logo-text logo-text-bean">Bean</div>
+                        <i class="fas fa-mug-hot logo-coffee-icon"></i>
+                        <div class="logo-text logo-text-board">Board</div>
+                    </div>
+                    <p>Crafting Moments One Cup at a Time</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Navigate</h3>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h3>Connect</h3>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bean Board Coffeehouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
